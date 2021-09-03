@@ -1,0 +1,20 @@
+<?php
+   require_once('../conexion.php');
+
+   $ComandoSql="SELECT NombreAgencia from Agencia";
+
+  // $Resultado=
+
+?>
+
+
+   <?php
+       $resultado=$conexion->query($ComandoSql);
+       
+         while($fila=$resultado->fetch_array())
+         {
+            echo"<option value='".$fila['NombreAgencia']."'>".$fila['NombreAgencia']."</option>"; 
+        }
+    ?>
+
+
