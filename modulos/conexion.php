@@ -6,7 +6,7 @@ $Contrasena = "";
 $BaseDatos = "dbhottur";
 
 global $conexion;
-$conexion = new mysqli($Servidor,$Usuario,$Contrasena,$BaseDatos);
+$conexion = new mysqli($localhost,$Usuario,$Contrasena,$BaseDatos);
 
 
 /*
